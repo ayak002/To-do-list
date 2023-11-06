@@ -57,11 +57,18 @@
         border-radius: 5px;
         width: 460px;
       }
+      .square-task:hover {
+        background-color:#741081;
+        color: #fdfbfd;
+        width: 460px;
+      }
     </style>
 
     <body>
       <div class="board">
         <h1 class="font-styling">List★</h1>
+        <ul>
+        </ul>
         <button class="button-task">✚ Create task</button>
 
         <div class="hidden-text">
@@ -69,7 +76,8 @@
         </div>
       </div>
 
-      <script src="todo.js"></script>
+      <script type="module" src="todo.mjs"></script>
+      <script type="module" src="modele.mjs"></script>
     </body>
   </head>
 </html>
