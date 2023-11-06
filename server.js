@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = process.env.PORT;
+const port = process.env.port;
 
 app.use(express.json());
 
