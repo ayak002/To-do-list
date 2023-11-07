@@ -1,4 +1,4 @@
-import TodoService from "./model.mjs";
+import TodoService from "./requete.mjs";
 
 const button = document.querySelector(".button-task");
 const hiddentext = document.querySelector(".hidden-text");
