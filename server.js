@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = process.env.port;
+const port = 3000;
 
 app.use(express.json()); //parser le corps des requêtes garder ça ou utiliser bodyparser?
 
