@@ -16,6 +16,17 @@ Use the `git clone` command to clone the project to your local machine.
 
 After cloning the project use the `npm install` command to install the necessary dependencies.
 
+### Configure Prisma
+
+You can set up prisma using the "db-setup" script defined in the package.json file.
+
+`db-setup`
+
+### Start container
+
+Then you can run : `docker compose --detach` to start the container.
+
+
 Once the dependencies are installed, you can start the application using the "start" script defined in the package.json file.
 
 `npm start`
