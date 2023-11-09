@@ -9,6 +9,8 @@ const todoService = new TodoService();
 
 button.addEventListener("click", function () {
   hiddentext.style.display = "block";
+  textArea.style.display = "block";
+  textArea.value = "";
   textArea.focus();
 });
 
@@ -16,8 +18,8 @@ hiddentext.addEventListener("keydown", async function (event) {
   if (event.key === "Enter") {
     textArea.style.display = "none";
     await todoService.addTodo(textArea.value);
-
     renderTodos(await todoService.getTodos());
+    textArea.value = "";
   }
 });
 
