@@ -12,20 +12,24 @@ Use the `git clone` command to clone the project to your local machine.
 
 `git clone git@github.com:ayak002/To-do-list.git`
 
+### Create .env
+
+create a `.env` file which need to contain variable `DATABASE_URL` with the value `postgresql://myusername:mysecretpassword@localhost:5432/databasetodo`
+and the variable `PORT` with the value `3000`
+
 ### Install dependencies
 
-After cloning the project use the `npm install` command to install the necessary dependencies.
+After cloning the project and creating the .env file use the `npm install` command to install the necessary dependencies.
+
+### Start container
+
+After the previous step you can run : `docker compose --detach` to start the container.
 
 ### Configure Prisma
 
 You can set up prisma using the "db-setup" script defined in the package.json file.
 
 `db-setup`
-
-### Start container
-
-Then you can run : `docker compose --detach` to start the container.
-
 
 Once the dependencies are installed, you can start the application using the "start" script defined in the package.json file.
 
