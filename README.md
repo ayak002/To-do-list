@@ -14,7 +14,7 @@ Use the `git clone` command to clone the project to your local machine.
 
 ### Create .env
 
-create a `.env` file which need to contain variable `DATABASE_URL` with the value `postgresql://myusername:mysecretpassword@localhost:5432/databasetodo`
+create a `.env` file which need to contain variable `DATABASE_URL` with the value `postgresql://yourusername:yoursecretpassword@localhost:5432/name_postgres_db`
 and the variable `PORT` with the value `3000`
 
 ### Install dependencies
