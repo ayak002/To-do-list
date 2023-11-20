@@ -19,6 +19,16 @@ class TodoService {
       });
       return post_response.json();
     }
+
+  async deleteTodo(taskId) {
+    const delete_response = await fetch("/deletetask", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({id: taskId}),
+    });
+    return delete_response.json();
   }
-   
-  export default TodoService;
+}
+export default TodoService; 
