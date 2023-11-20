@@ -1,6 +1,6 @@
 # To-do-list
 
-Welcome to the To-do-list project! This project is a website called "List*" that allows you to enter tasks and mark them as completed when they are done..
+Welcome to the To-do-list project! This project is a website called "List*" that allows you to enter tasks and mark them as completed when they are done.
 
 ## Getting Started
 

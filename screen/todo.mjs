@@ -15,7 +15,7 @@ button.addEventListener("click", function () {
 });
 
 hiddentext.addEventListener("keydown", async function (event) {
-  if (event.key === "Enter") {
+  if (event.key === "Enter") { 
     textArea.style.display = "none";
     await todoService.addTodo(textArea.value);
     renderTodos(await todoService.getTodos());

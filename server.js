@@ -29,7 +29,7 @@ app.delete("/deletetask", async (req, res) => {
   const taskId  = req.body.id;
   const deleteTask = await prisma.task.delete({
     where: {
-      id: Number(taskId) //convertir string en int = Number, String, Boolean pour faire la conversion de type
+      id: Number(taskId)
     }
   });
   res.json(deleteTask);
