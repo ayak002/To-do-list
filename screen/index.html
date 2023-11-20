@@ -46,21 +46,45 @@
       .task-description {
         width: 460px;
         height: 100px;
-        border: none;
+        border: none; 
+      }
+       .square-container {
+        width: 460px;
+        display: flex;
+        margin-bottom: 1px;
+        text-align: center;       
       }
       .square-task {
         background-color: #c4c3fc;
         color: #48404b;
-        text-align: center;
-        justify-content: left;
         font-size: 13px;
         border-radius: 5px;
         width: 460px;
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+        padding-left: 5px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-left: auto;
       }
-      .square-task:hover {
+     .square-task:hover {
         background-color:#741081;
         color: #fdfbfd;
         width: 460px;
+      }
+      .selected {
+        background-color: black;
+        color: white;
+      }
+      .trash-btn {
+      background-image: url(trash.png);
+      background-repeat: no-repeat;
+      background-size: 17px 17px;
+      border: none;
+      padding: 7px;
+      cursor: pointer;
+      margin-left: auto;
       }
     </style>
 
@@ -69,13 +93,12 @@
         <h1 class="font-styling">List★</h1>
         <ul>
         </ul>
-        <button class="button-task">✚ Create task</button>
-
+          <button class="button-task">✚ Create task</button>
+        
         <div class="hidden-text">
           <textarea class="task-description"></textarea>
         </div>
       </div>
-
       <script type="module" src="todo.mjs"></script>
       <script type="module" src="modele.mjs"></script>
     </body>

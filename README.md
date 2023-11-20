@@ -29,7 +29,7 @@ After the previous step you can run : `docker compose --detach` to start the con
 
 You can set up prisma using the "db-setup" script defined in the package.json file.
 
-`npm run db-setup`
+`db-setup`
 
 Once the dependencies are installed, you can start the application using the "start" script defined in the package.json file.
 
@@ -40,3 +40,4 @@ This will execute the "start" script, which is configured to launch the applicat
 ### Issue Reporting
 
 If you encounter issues with the application or wish to report bugs, please open an issue in the Issues section.
+
