@@ -1,5 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
 require('dotenv').config();
+const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 const express = require("express");
 const path = require("path");
@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static(path.join("screen")));
 
-app.post("/createtask", async (req, res) => {
+app.post("/task", async (req, res) => {
     const { content } = req.body;
     const tasks = await prisma.task.create({
       data: {
@@ -20,12 +20,12 @@ app.post("/createtask", async (req, res) => {
     res.json(tasks);
 });
 
-app.get("/showtask", async (req, res) => {
+app.get("/task", async (req, res) => {
     const tasks = await prisma.task.findMany();
     res.json(tasks);
 });
 
-app.delete("/deletetask", async (req, res) => {
+app.delete("/task", async (req, res) => {
   const taskId  = req.body.id;
   const deleteTask = await prisma.task.delete({
     where: {
