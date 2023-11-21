@@ -19,7 +19,7 @@ and the variable `PORT` with the value `3000`
 
 ### Install dependencies
 
-After cloning the project and creating the .env file use the `npm install` command to install the necessary dependencies.
+After cloning the project and creating the '.env' file use the `npm install` command to install the necessary dependencies.
 
 ### Start container
 
